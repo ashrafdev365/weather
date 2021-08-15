@@ -1,0 +1,21 @@
+[debug] [2021-08-15T18:01:37.950Z] ----------------------------------------------------------------------
+[debug] [2021-08-15T18:01:37.956Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-08-15T18:01:37.957Z] CLI Version:   9.16.0
+[debug] [2021-08-15T18:01:37.958Z] Platform:      win32
+[debug] [2021-08-15T18:01:37.958Z] Node Version:  v14.16.0
+[debug] [2021-08-15T18:01:37.960Z] Time:          Sun Aug 15 2021 11:01:37 GMT-0700 (Pacific Daylight Time)
+[debug] [2021-08-15T18:01:37.961Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-08-15T18:01:37.981Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-15T18:01:37.982Z] > authorizing via signed-in user (ashrafdev365@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\USER\Documents\React Projects\weather
+
