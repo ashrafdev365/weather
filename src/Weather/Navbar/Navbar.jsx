@@ -1,21 +1,27 @@
 import React from "react";
 import "./nav.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Navbar = () => {
   //this is for mobile open close menu
   const [menu, setmenu] = React.useState("");
   React.useEffect(() => {
-    window.screen.width < 1050 ? setmenu("0%") : setmenu("320px");
+    window.screen.width < 1050 ? setmenu("0") : setmenu("320px");
+    AOS.init({
+      duration : 2000
+    });
   }, []);
   const handleOpenMenu = () => {
-    return setmenu("60%");
+    return setmenu("50%");
   };
   const handleCloseMenu = () => {
     return setmenu("0%");
   };
+
   return (
     <>
-      <nav>
+      <nav data-aos={"fade-down"}>
         <div className="nav_div">
           <div className="logo_div">
             <img src="images/images.png" alt="covid19 image" />

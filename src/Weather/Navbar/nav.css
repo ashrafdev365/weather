@@ -102,14 +102,15 @@ nav {
     position: absolute;
     top: 0px;
     right: 0px;
-    z-index: 1;
+    z-index: 2;
     overflow-x: hidden;
-    background-color: white;
+    background-color: #5bb0f3;
     transition: 1s;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     justify-content: flex-start;
+    color: white;
   }
   .nav_links_div {
     flex-direction: column;

@@ -18,10 +18,10 @@ const Footer = () => {
           <button>Submit</button>
         </div>
         <div className="social_div">
-          <i className="fab fa-facebook-square"></i>
-          <i className="fab fa-instagram"></i>
-          <i className="fab fa-twitter"></i>
-          <i className="fab fa-linkedin"></i>
+         <a href="https://www.facebook.com/ashrafdev.ashraf"> <i className="fab fa-facebook-square"></i></a>
+         <a href="https://www.instagram.com/ashrafdev_365/"> <i className="fab fa-instagram"></i></a>
+         <a href="https://twitter.com/Ashraf_365"> <i className="fab fa-twitter"></i></a>
+         <a href="https://www.linkedin.com/in/ashraf-dev-297301206/"> <i className="fab fa-linkedin"></i></a>
         </div>
         <div className="footer_logo_div">
           <img src="images/images.png" alt="weather" />

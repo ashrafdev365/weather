@@ -3,6 +3,9 @@ import Flag from "./Flag";
 import Others from "./Others";
 import "./data.css";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Data = () => {
   const [current, setcurrent] = useState();
   const [search, setsearch] = useState("");
@@ -17,15 +20,17 @@ const Data = () => {
 
   useEffect(() => {
     getApiData();
-  }, [submit]);
 
+    AOS.init({
+      duration: 2000,
+    });
+  }, [submit]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setsubmit(search);
   };
 
-  console.log(submit);
   let date = new Date().getDate();
   return (
     <>
@@ -34,7 +39,7 @@ const Data = () => {
       ) : (
         <div className="weather_main_div">
           <div className="weather_div">
-            <div className="search_div">
+            <div className="search_div" data-aos={"zoom-out-up"}>
               <form onSubmit={handleSubmit}>
                 <input
                   type="search"
@@ -44,8 +49,9 @@ const Data = () => {
               </form>
               <p>Date: {date}</p>
             </div>
+
             <div className="weather_data">
-              <div className="tem_main_div">
+              <div className="tem_main_div" data-aos={"zoom-out-up"}>
                 <div className="country_name_div">
                   <h1>{current.name}</h1>
                   <h2>{current.weather[0].description}</h2>
@@ -71,10 +77,10 @@ const Data = () => {
 
               <div className="box_main_div">
                 <Others name="Himudity" value={current.main.humidity} />
-                <Others name="pressure" value={current.main.pressure} />
-                <Others name="pressure" value={current.main.pressure} />
+                <Others name="sea_level" value={current.main.pressure} />
+                <Others name="pressure" value={current.main.sea_level} />
                 <Others name="speed" value={current.wind.speed} />
-                <Others name="speed" value={current.wind.speed} />
+                <Others name="deg" value={current.wind.deg} />
                 <Others name="clouds" value={current.clouds.all} />
               </div>
             </div>
